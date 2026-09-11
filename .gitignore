@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+
+# Regenerable large step-level projection intermediates
+results/multiclimate_extension/projection_diagnostic/55A_PPO_projection_step_level.csv
+results/multiclimate_extension/projection_diagnostic/55B_PPO_projection_mechanism_step_level.csv
+
+# Regenerable horizon-selection model checkpoints (final PPO checkpoints are tracked)
+results/multiclimate_extension/horizon_reconfirmation/models/

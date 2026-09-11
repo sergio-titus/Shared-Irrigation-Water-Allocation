@@ -1,0 +1,17 @@
+# Versions recoverable directly from the saved Stable-Baselines3 PPO checkpoints
+stable-baselines3==2.9.0
+gymnasium==1.3.0
+numpy==2.4.6
+cloudpickle==3.1.2
+
+# Project dependencies; exact historical versions were not embedded in checkpoint metadata
+aquacrop
+pandas
+scipy
+matplotlib
+requests
+psutil
+
+# The checkpoints report PyTorch 2.14.0+cpu. Install the matching build for your platform
+# when available in your package index; otherwise use a Stable-Baselines3-compatible build.
+torch
