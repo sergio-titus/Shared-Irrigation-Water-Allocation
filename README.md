@@ -22,8 +22,8 @@ Core irrigation constraints are a 40 mm shared daily capacity, 25 mm maximum irr
 
 ```text
 .
-├── scripts/                              # simulation, training, evaluation, and analysis code
-│   ├── multiclimate_optimization_core.py # shared multi-climate environment
+├── scripts/                              
+│   ├── multiclimate_optimization_core.py 
 │   ├── audit_multiclimate_weather.py
 │   ├── freeze_experimental_protocol.py
 │   ├── generate_development_reference.py
@@ -31,28 +31,9 @@ Core irrigation constraints are a 40 mm shared daily capacity, 25 mm maximum irr
 │   ├── train_final_ppo_ensemble.py
 │   ├── evaluate_all_controllers.py
 │   ├── run_statistical_analysis.py
-│   └── ...                               # diagnostics and numerical-reference analyses
-├── results/
-│   └── multiclimate_extension/
-│       ├── weather/                      # raw and processed weather data
-│       ├── protocol/                     # frozen temporal partition/protocol
-│       ├── reference/                    # development reference yields
-│       ├── training_protocol/            # frozen PPO specification
-│       ├── horizon_reconfirmation/       # horizon-selection outputs
-│       ├── final_training/                # final PPO summaries + 10 checkpoints
-│       ├── final_test_reference/          # held-out reference denominators
-│       ├── final_evaluation_protocol/     # frozen final-test manifest
-│       ├── final_evaluation/              # final controller results
-│       ├── final_statistics/              # Friedman/Wilcoxon-Holm analyses
-│       ├── final_diagnostics/             # climate/water/latency diagnostics
-│       ├── projection_diagnostic/         # PPO feasibility-projection diagnostics
-│       ├── offline_perfect_foresight/     # post-hoc numerical reference analyses
-│       ├── water_productivity_robust_summary/
-│       └── final_figures_portrait/
-└── manuscript/                            # manuscript source and selected figures
+│   └── ...                              
 ```
 
-The original milestone filenames are intentionally retained because later diagnostic scripts explicitly load the frozen `53J` evaluator and because the filenames provide an audit trail linking code to stored outputs.
 
 ## Installation
 
@@ -149,19 +130,7 @@ python scripts/summarize_water_productivity_robustly.py
 ```
 
 The original frozen Friedman/Wilcoxon-Holm inferential analyses remain in `53K`; the WP script changes descriptive presentation to median [Q1, Q3] because of structural zeros and strong skew.
-
-## Key frozen outputs
-
-For readers who do not want to rerun training, the main paper-level outputs are:
-
-- `results/multiclimate_extension/final_evaluation/controller_evaluation_final_controller_panel.csv`
-- `results/multiclimate_extension/final_statistics/statistical_analysis_friedman_results.csv`
-- `results/multiclimate_extension/final_statistics/statistical_analysis_pairwise_wilcoxon_holm.csv`
-- `results/multiclimate_extension/final_diagnostics/controller_diagnostics_climate_controller_diagnostics.csv`
-- `results/multiclimate_extension/projection_diagnostic/ppo_projection_diagnostic_PPO_projection_climate_scarcity_summary.csv`
-- `results/multiclimate_extension/projection_diagnostic/ppo_projection_mechanism_Tunis40_projection_mechanism.csv`
-- `results/multiclimate_extension/offline_perfect_foresight/perfect_foresight_40pct_panel/perfect_foresight_panel_40pct_climate_year_results.csv`
-- `results/multiclimate_extension/water_productivity_robust_summary/water_productivity_WP_manuscript_table.csv`
+`
 
 ## Reproducibility notes
 
