@@ -140,7 +140,7 @@ Some numerical outputs may show very small platform-dependent floating-point dif
 
 ## Data source
 
-Weather inputs were obtained from NASA POWER and converted to the AquaCrop input structure by the project scripts. Raw API responses and processed weather tables used by the simulations are retained under `results/multiclimate_extension/weather/` for traceability.
+Weather inputs were obtained from NASA POWER: https://power.larc.nasa.gov/data-access-viewer and converted to the AquaCrop input structure by the project scripts. Raw API responses and processed weather tables used by the simulations are retained under data/weather/` for traceability.
 
 ## Citation
 
