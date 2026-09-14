@@ -1,0 +1,4 @@
+Site,Country,Climate role,Latitude,Longitude,Start date,End date,Expected days,Available rows,Missing calendar rows,Missing T2M_MAX,Missing T2M_MIN,Missing T2M,Missing T2MDEW,Missing PRECTOTCORR,Missing ALLSKY_SFC_SW_DWN,Missing WS2M,Missing PS,Missing ReferenceET,Tmax<Tmin days,Negative rainfall days,Negative ET0 days
+Tunis,Tunisia,Mediterranean,36.8065,10.1815,1981-01-01,2025-12-31,16436,16436,0,0,0,0,0,0,1095,0,0,1095,0,0,0
+Niamey,Niger,Hot semi-arid,13.5116,2.1254,1981-01-01,2025-12-31,16436,16436,0,0,0,0,0,0,1095,0,0,1095,0,0,0
+Cotonou,Benin,Humid tropical/coastal,6.3703,2.3912,1981-01-01,2025-12-31,16436,16436,0,0,0,0,0,0,1095,0,0,1095,0,0,0
